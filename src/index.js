@@ -5,10 +5,10 @@ module.exports = function towelSort (matrix) {
    return [];
   };
   for (let i=0; i< matrix.length; i++) {
-    if (i===1 || i%2===1) {
+    if (i%2!=0) {
       matrix[i] = matrix[i].reverse();
     }
-      array.push((matrix[i]));
+      array = array.concat((matrix[i]));
     
   }
   return array;
